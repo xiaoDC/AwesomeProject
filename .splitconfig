@@ -1,0 +1,10 @@
+{
+  "package": "AwesomeProject",
+  "base": {
+    "index": "./index.ios.js"
+  },
+  "custom": [{
+    "name": "sample_a",
+    "index": "./src/components/SampleA.js"
+  }]
+}
