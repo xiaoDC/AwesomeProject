@@ -8,7 +8,7 @@ class MyComponent extends Component {
   render() {
     return (
       <Text style={styles.add}>
-        This is my own component
+        This is my own component 111111!!!!
       </Text>
     );
   }

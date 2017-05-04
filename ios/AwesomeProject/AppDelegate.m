@@ -18,14 +18,14 @@
 {
   NSURL *jsCodeLocation;
 
-//  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
-//  jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
-//  NSString *jsString = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"bundle" inDirectory:@"split/base"];
-  NSString *jsString = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"bundle" inDirectory:@"bundle"];
+  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
+  // jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+  // NSString *jsString = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"bundle" inDirectory:@"split/base"];
+  // NSString *jsString = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"bundle" inDirectory:@"bundle"];
 
 
-  RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:[NSURL URLWithString:jsString]
-//  RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
+  // RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:[NSURL URLWithString:jsString]
+  RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"AwesomeProject"
                                                initialProperties:nil
                                                    launchOptions:launchOptions];
